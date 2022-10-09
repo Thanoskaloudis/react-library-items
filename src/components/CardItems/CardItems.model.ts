@@ -1,5 +1,5 @@
 export interface ICardItem {
-  duration: boolean
+  duration: string
   has_summative_assessment: boolean
   id: number
   image: string
