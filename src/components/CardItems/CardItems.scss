@@ -1,12 +1,13 @@
 .cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 
   &--top {
     width: 100%;
     border-bottom: 1px solid #d5d8df;
     display: flex;
+    align-items: center;
 
     &__search{
       width: 100%;
@@ -15,10 +16,27 @@
       border: 0;
       outline: none;
     }
+
+    &__sort {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 35%;
+      margin-right: 10px;
+
+      &__label {
+        color: rgb(116, 115, 115);
+        width: max-content;
+      }
+
+      &__select {
+        border: none;
+        font-size: 1em;
+      }
+    }
   }
 
   &--item {
-    flex: 0 0 25rem;
     box-sizing: border-box;
     margin: 1rem .25rem;
   }
