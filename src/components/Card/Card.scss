@@ -8,5 +8,39 @@
   img {
     max-width: 20rem;
     border-radius: 0.8rem;  
+    box-shadow: 0px 6px #c1c1c166;
+  }
+
+  &--title {
+    margin-top: .5rem;
+
+    &__subtitle {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: #353434b8;
+    }
+
+    &__title {
+      color: #742ab6;
+      margin: 5px 0 10px 0;
+    }
+  }
+
+  &--description {
+    margin-bottom: 10px;
+  }
+
+  &--link {
+    color: #742ab6;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    &__href {
+      color: #742ab6;
+      text-decoration: none;
+      font-weight: 500;
+    }
   }
 }
