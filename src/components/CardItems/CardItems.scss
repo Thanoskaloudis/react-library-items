@@ -3,9 +3,28 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  &-item {
+  &--top {
+    width: 100%;
+    border-bottom: 1px solid #d5d8df;
+    display: flex;
+
+    &__search{
+      width: 100%;
+      padding: 20px 20px 20px 60px;
+      font-size: 1.2em;
+      border: 0;
+      outline: none;
+    }
+  }
+
+  &--item {
     flex: 0 0 25rem;
     box-sizing: border-box;
     margin: 1rem .25rem;
+  }
+
+  &--item:hover {
+    transition: transform 270ms ease;
+    transform: scale(1.05);
   }
 }
