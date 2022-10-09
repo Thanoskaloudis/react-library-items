@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --config ./jest.config.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +41,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-test-renderer": "^18.0.0",
+    "jest-environment-jsdom": "^29.1.2",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.0.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(scss|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
