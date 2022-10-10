@@ -63,7 +63,8 @@ export const CardItems = (props: ICardItems) => {
           />
           <div className="cards--top__sort">
             <label className="cards--top__sort__label">Sort By</label>
-            <select className="cards--top__sort__select" defaultValue={'DEFAULT'} onChange={(e) => updateSortState(e.target.value)}>
+            <select className="cards--top__sort__select" data-testid='select'
+             defaultValue={'DEFAULT'} onChange={(e) => updateSortState(e.target.value)}>
               <option value="DEFAULT" disabled>None</option>
               <option value="duration">Duration</option>
               <option value="alphabetical">Alphabetical</option>
@@ -71,7 +72,7 @@ export const CardItems = (props: ICardItems) => {
           </div>
       </div>
       {showingItems.map((cardItem) => (
-        <div className="cards--item" key={cardItem.id}>
+        <div className="cards--item" key={cardItem.id} data-testid='card'>
           <Card
             title={cardItem.title}
             imgURL={cardItem.image}

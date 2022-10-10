@@ -24,6 +24,7 @@ exports[`<Selection /> Should render correctly 1`] = `
       </label>
       <select
         className="cards--top__sort__select"
+        data-testid="select"
         defaultValue="DEFAULT"
         onChange={[Function]}
       >

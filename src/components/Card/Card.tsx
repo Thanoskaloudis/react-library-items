@@ -14,14 +14,14 @@ export const Card = (props: ICard) => {
         />
       </div>
       <div className="card--title">
-        <span className="card--title__subtitle"> <RiBook2Fill /> {props.type} • {props.duration}</span>
-        <h2 className="card--title__title">{props.title}</h2>
+        <span className="card--title__subtitle" data-testid="cardSubTitle"> <RiBook2Fill /> {props.type} • {props.duration}</span>
+        <h2 className="card--title__title" data-testid="cardTitle">{props.title}</h2>
       </div>
       <div className="card--description">
       {props.description}
       </div>
       <div className="card--link">
-        <a className="card--link__href" href={props.link} target="_blank" rel="noopener noreferrer">View pathway</a>
+        <a className="card--link__href" data-testid="cardLink" href={props.link} target="_blank" rel="noopener noreferrer">View pathway</a>
         <FaArrowRight />
       </div>
     </div>
